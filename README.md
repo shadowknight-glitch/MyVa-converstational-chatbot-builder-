@@ -88,34 +88,7 @@ A no-code platform for building conversational chatbots using Flutter for the fr
    python app.py
    ```
 
-## Configuration
 
-### Firebase Configuration
-
-Update `lib/firebase_options.dart` with your Firebase project details:
-
-```dart
-static const FirebaseOptions web = FirebaseOptions(
-  apiKey: 'your-api-key',
-  appId: 'your-app-id',
-  messagingSenderId: 'your-sender-id',
-  projectId: 'your-project-id',
-  authDomain: 'your-project-id.firebaseapp.com',
-  storageBucket: 'your-project-id.appspot.com',
-);
-```
-
-### Backend URL
-
-Update the backend URL in `lib/screens/chat_screen.dart`:
-
-```dart
-final response = await http.post(
-  Uri.parse('http://localhost:8000/chat'), // Update this URL
-  headers: {'Content-Type': 'application/json'},
-  body: '{"message": "$userMessage"}',
-);
-```
 
 ## Usage
 
@@ -126,31 +99,7 @@ final response = await http.post(
 5. **View history** of all conversations
 6. **Explore** pre-built templates for inspiration
 
-## Project Structure
 
-```
-myva_app/
-├── lib/
-│   ├── screens/
-│   │   ├── splash_screen.dart
-│   │   ├── login_screen.dart
-│   │   ├── signup_screen.dart
-│   │   ├── dashboard_screen.dart
-│   │   ├── profile_screen.dart
-│   │   ├── explore_screen.dart
-│   │   ├── history_screen.dart
-│   │   ├── generate_bot_screen.dart
-│   │   └── chat_screen.dart
-│   ├── main.dart
-│   └── firebase_options.dart
-├── web/
-│   └── index.html
-├── backend/
-│   ├── app.py
-│   ├── requirements.txt
-│   └── .env.example
-└── pubspec.yaml
-```
 
 ## API Endpoints
 
@@ -159,14 +108,4 @@ myva_app/
 - `POST /chat` - Send message to Gemini API
 - `GET /health` - Health check endpoint
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
