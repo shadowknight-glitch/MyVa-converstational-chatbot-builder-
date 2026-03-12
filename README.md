@@ -1,6 +1,6 @@
 # MyVA - Chatbot Builder
 
-A no-code platform for building conversational chatbots using Flutter for the frontend, Firebase for the database, and Python with Gemini API for AI responses.
+A no-code platform for building conversational chatbots using Flutter/flutterflow for the frontend, Firebase for the database, and Python with Gemini API for AI responses.
 
 ## Features
 
@@ -15,7 +15,7 @@ A no-code platform for building conversational chatbots using Flutter for the fr
 ## Tech Stack
 
 ### Frontend
-- **Flutter**: Web framework
+- **Flutter/flutterflow**: Web framework
 - **Firebase**: Authentication and Firestore database
 - **Provider**: State management
 
@@ -45,11 +45,7 @@ A no-code platform for building conversational chatbots using Flutter for the fr
    ```
 
 3. **Configure Firebase**:
-   - Create a Firebase project at https://console.firebase.google.com
-   - Enable Authentication (Email/Password)
-   - Create Firestore database
-   - Download the Firebase configuration
-   - Update `lib/firebase_options.dart` with your Firebase config
+   have basic firebase sdk just in case on yout laptop
 
 4. **Run the app**:
    ```bash
@@ -81,7 +77,7 @@ A no-code platform for building conversational chatbots using Flutter for the fr
    ```bash
    cp .env.example .env
    ```
-   - Edit `.env` and add your Gemini API key
+   -in case of new api key needed 
 
 6. **Run the backend server**:
    ```bash
